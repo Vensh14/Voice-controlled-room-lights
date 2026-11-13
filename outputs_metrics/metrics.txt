@@ -1,0 +1,28 @@
+
+=== Model evaluation ===
+Model file            : voice_switch_fixed.keras
+Test samples          : 5078  (20% split, random_state=42)
+Test accuracy         : 94.41%
+Accuracy @ conf>=0.9  : 98.36%  (accepts 91.5% of samples)
+Parameters            : 413,705
+Model file size       : 1.70 MB
+MFCC extraction time  : 5.5 ms per 1 s clip
+CNN inference time    : 19.0 ms per clip (CPU)
+
+=== Per-class metrics ===
+              precision    recall  f1-score   support
+
+          on      0.910     0.931     0.921       771
+         off      0.927     0.943     0.934       749
+         one      0.950     0.958     0.954       779
+         two      0.947     0.961     0.954       776
+       three      0.974     0.961     0.968       745
+         cat      0.936     0.933     0.935       406
+         dog      0.970     0.923     0.946       426
+         wow      0.954     0.918     0.935       425
+       noise      0.000     0.000     0.000         1
+
+    accuracy                          0.944      5078
+   macro avg      0.841     0.836     0.838      5078
+weighted avg      0.944     0.944     0.944      5078
+
